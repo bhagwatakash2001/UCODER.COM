@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe-app by _akash_bhagwat</title>
+    <link rel='icon' href='/Recipe-app/' type='image/png' size="" />
+    <link rel="stylesheet" href="/Recipe-app/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+  
+    <div class="mobile-container">
+        
+        <header>
+            <!-- nav -->
+         
+            <button id="nav-btn"> &#x2630;</button>
+            <nav id="nav">
+
+                    <button class="nav-b" id="nav-b"><i class="fas fa-arrow-left"></i></button>
+                <ul>
+                    <li>
+                        <a href="/index.html">ucoder.com</a>
+                    </li>
+                    <li>
+                        <a href="/quizapp/index.html">Quiz-app</a>
+                    </li>
+                    <li>
+                        <a href="/"> Recipe-app</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <input type="text" id="search-term" value="chocolate">
+            <button id="search"><i class="fas fa-search"></i></button>
+        </header>
+        <div class="fav-container">
+            <h3>Favourite Meals</h3>
+            <ul class="fav-meals" id="fav-meals">
+                <li>
+                    <img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview" alt="">
+                    <span>Lasagna</span>
+                </li>
+                <li>
+                    <img src="https://www.themealdb.com//images//media//meals//hglsbl1614346998.jpg" alt="">
+                    <span>Late</span>
+                </li>
+                <li>
+                    <img src="https://www.themealdb.com//images//media//meals//xqrwyr1511133646.jpg" alt="">
+                    <span>Lasagna</span>
+                </li>
+        </div>
+
+        <div class="meals" id="meals">
+
+        </div>
+
+    </div>
+
+    <div class="popup-container hidden" id="meal-popup">
+
+        <div class="popup" id="meals">
+            <button id="close-popup" class="close-popup"><i class="fa fa-times"></i></button>
+            <div class="meal-info" id="meal-info">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="script.js" defer></script>
+    <script>
+
+        const navBtn = document.getElementById('nav-btn');
+        const nav = document.getElementById('nav');
+        const navB = document.getElementById('nav-b');
+
+        navBtn.addEventListener('click', () => {
+
+            nav.classList.toggle('active');
+
+        });
+
+        navB.addEventListener('click', () => {
+
+            nav.classList.toggle('active');
+
+        });
+
+    </script>
+</body>
+
+</html>

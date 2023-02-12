@@ -1,0 +1,15 @@
+
+.mycontainer{
+    margin-top: 6em;
+    margin-bottom: 2em;
+    margin-left: 400px;
+    margin-right: 400px;
+    border: 1px solid #f7f7f7 ;
+    box-shadow: 0 14px 32px 0 rgba(0, 0, 0, 0.2);
+
+}
+    @media only screen and (max-width: 770px){
+        .mycontainer {
+        margin: auto;
+        }
+      }  

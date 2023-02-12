@@ -1,0 +1,1498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" href="/img/Angular.png" type="png">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>uCoder-heaven for developers</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Sticky Social icons -->
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/akash.bhagwat.3110/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/AkashBh73905037" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/_akash_bhagwat/" class="google"><i class="fa fa-instagram"></i></a>
+    <a href="https://wa.me/+918766800955" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top pb-0" style="background-color: black;">
+    <a class="navbar-brand" href="index.html">
+      <h3>uCoder.com</h3>
+    </a>
+    <button class="navbar-toggler" type="button btn-x" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html" style="font-size: 16px;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #f1f1f1;">
+            <a class="dropdown-item" href="projects.html">Projects</a>
+            <a class="dropdown-item" href="notes.html">Notes</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html" style="font-size: 16px;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" style="font-size: 16px;">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/quizapp/index.html" style="font-size: 16px;">Quiz App</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/soundboard/index.html" style="font-size: 16px;">Sound Board</a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="/Recipe-app/index.html" style="font-size: 16px;">Recipe App</a>
+        </li>      
+      
+         <li class="nav-item">
+          <a class="nav-link" href="/Movies-App/index.html" style="font-size: 16px;">Movies App</a>
+        </li> 
+
+      </ul>
+      <button class="btn btn-light my-2 btn-sm my-sm-0" type="submit" data-toggle="modal"
+        data-target="#loginModal">Login</button>
+      <a href="SignUp.html"><button class="btn btn-warning btn-sm my-2 my-sm-0 ml-1">SignUp</button></a>
+    </div>
+  </nav>
+
+  <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log into your account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Login</button>
+            <button type="reset" class="btn btn-primary">Reset</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jumbotron -->
+
+  <div class="jumbotron p-4 p-md-5 text-dark">
+    <div class="col-md-6 px-0">
+      <h2 class="featurette-heading">Welcome to uCoder.com </h2>
+      <p class="lead my-3">Our intension behind developing this website is that We see, most of the students often
+        struggule searching
+        micro-projects and notes during exams or submission.Thus we decided to upload all the notes and micro-projects
+        here.
+      <p class="lead mb-0"><a href="#demo" class="text-dark font-weight-bold" data-toggle="collapse">Continue
+          reading...</a></p>
+    </div>
+
+    <div id="demo" class="collapse mt-1">
+      You can also help us by sending your micro-projects and notes to our whatsapp.Yor are always welcome here.
+    </div>
+  </div>
+
+
+  <!-- Cards -->
+  <div class="container">
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Operating Systems</strong>
+            <h3 class="mb-0">Overview of operating system</h3>
+            <div class="mt-2 mb-2 text-muted">Sept 6,2020</div>
+            <p class="card-text mb-auto">
+            <h6> What is an operating system ?</h6> An Operating System is a imediator between the user and the
+            hardware.
+            </p>
+            <a href="Notes/TYCM/OSY/OSY-1st-Chapter.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img " src="https://source.unsplash.com/200x250/?google,github,tech" width="200"
+              height="370">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Software Testing</strong>
+            <h3 class="mb-0">Introduction of software testing</h3>
+            <div class="mt-2 mb-2 text-muted">Sept 9,2020</div>
+            <p class="mb-auto">
+            <h6> What is software testing ?</h6>In case we need to know what is a bug or error.Error is a varience
+            between expected result & the actual result and to find out that bug or error is termed as <strong>software
+              testing.</strong> </p>
+            <a href="Notes/TYCM/STE/N-STE-Home.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img mt-2" src="https://source.unsplash.com/200x350/?testing-software" width="200"
+              height="370">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">Advance Java Programing</strong>
+            <h3 class="mb-0">AWT -1st chapter</h3>
+            <div class="mt-2 mb-2 text-muted">Sept 10,2020</div>
+            <p class="card-text mb-auto">
+            <h6> What do you mean by AWT package or toolkit ?</h6>Java AWT is an API to develop GUI or window-based
+            applications in java. AWT is heavyweight i.e. its components are using the resources of OS. <br> Java swing
+            can be a better option developers mostly prefer.</p>
+            <a href="Notes/TYCM/AJP/N-AJP-Home.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img mt-2" src="https://source.unsplash.com/200x350/?coading,programming"
+              width="200" height="370">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div
+          class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Client Side Scripting</strong>
+            <h3 class="mb-0">Basics of JavaScript</h3>
+            <div class="mt-2 mb-2 text-muted">Nov 11</div>
+            <p class="mb-auto">
+            <h6> What do you mean by CSS ?</h6>It may seem familiar to the HTML,CSS but it is not "Cascading Stylle
+            Sheets" it is called as "Client Side Scripting " <br><br> Client-side scripting simply means running
+            scripts, such as JavaScript, on the client device, usually within a browser.</p>
+            <a href="Notes/TYCM/CSS/N-CSS-Home.html" class="stretched-link">Continue reading</a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img class="bd-placeholder-img mt-2" src="https://source.unsplash.com/200x350/?iphone,android,smartphone"
+              width="200" height="370">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects jumbotron -->
+  <div class="jumbotron pt-2 pb-2 ml-1 mr-1  text-dark rounded bg-light" style="margin-bottom: 14px;">
+    <div class="col-md-6 px-0">
+      <h3 class="featurette-heading">Microprojects</h3>
+    </div>
+  </div> 
+
+  <!-- bottom card --> 
+  <div class="album py-2" style="background-color: #ffff;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="img/img-22.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text">OSY-Micro Project</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="Projects/TYCM/P-OSY.html"> <button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-primary">Download</button>
+                </div>
+                <small class="text-muted">21 hr ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="img/img-20.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text">CSS-Micro Project</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="comming_soon.html"> <button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
+                  </a> <button type="button" class="btn btn-sm btn-outline-primary">Download</button>
+                </div>
+                <small class="text-muted">1 day before</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="img/img-14.jpg" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-text">AJP-Micro Project</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="comming_soon.html"> <button type="button"
+                      class="btn btn-sm btn-outline-primary">View</button></a>
+                  <button type="button" class="btn btn-sm btn-outline-primary">Download</button>
+                </div>
+                <small class="text-muted">5 mins ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--Recent post -->
+  <main role="main" class="container">
+    <div class="card">
+      <div class="card-body">
+        Recent posts
+      </div>
+    </div>
+    <div class="row mt-4">      
+      <div class="col-md-8 blog-main">
+
+        <div class="blog-post ml-3 mr-2 ">
+         
+          <h2 class="blog-post-title">Overview of operating system</h2>
+
+          <p class="blog-post-meta">Sept 6, 2020 by <a class="text-primary">G.N.Jorvekar Sir</a></p>
+
+          <p>An Operating System (OS) is an interface(imediator) between a computer user and computer hardware</p>
+
+          <hr>
+          <p><strong> An operating system is a software which performs all the basic tasks like file management, memory
+              management, process management, handling input and output, and controlling peripheral devices such as disk
+              drives and printers.</strong> <br></p>
+
+          <p>Some popular Operating Systems include Linux Operating System, Windows Operating System, VMS, OS/400, AIX,
+            z/OS, etc.</p>
+
+          <img src="/img/os-ex.png" class="img-fluid mt-3 mb-4" alt="Responsive image">
+
+
+          <h6 class="text-danger"><strong>Explain different generations of operating systems.</strong></h6>
+          <br>
+          <h6><strong> <a href=""> Ans - </a></strong></h6>
+
+
+          <p class="mt-3"> <strong> 1. First generation 1945 – 1955 - </strong>
+            The earliest electronic digital computers had no operating systems.
+            Machines of the time were so primitive that programs were often
+            entered one bit at time on rows of mechanical switches (plug boards).
+            Programming languages were unknown (not even assembly
+            languages).</p>
+
+
+          <p class="mt-3"> <strong>2.Second generation 1955 – 1965 - </strong>
+
+            By the early 1950's, the routine had improved somewhat with the
+            introduction of punch cards.
+            The General Motors Research Laboratories implemented the first
+            operating systems in early 1950's for their IBM 701. The system of
+            the 50's generally ran one job at a time. These were called singlestream
+            batch processing systems because programs and data were
+            submitted in groups or batches.
+          </p>
+
+          <p class="mt-3"> <strong> 3. Third generation 1965 – 1980 - </strong>
+
+            The systems of the 1960's were also batch processing systems, but
+            they were able to take better advantage of the computer's resources by
+            running several jobs at once. So operating systems designers
+            developed the concept of multiprogramming in which several jobs are
+            in main memory at once; a processor is switched from job to job as
+            needed to keep several jobs advancing while keeping the peripheral
+            devices in use.
+          </p>
+
+          <p class="mt-3"> <strong> 4. Fourth generation 1980 –</strong>
+
+            With the development of LSI (Large Scale Integration) circuits,
+            chips, operating system entered in the system entered in the personal
+            computer and the workstation age. Microprocessor technology
+            evolved to the point that it becomes possible to build desktop
+            computers as powerful as the mainframes of the 1970s.
+          </p>
+
+          <h4 style="margin-bottom: 20px ;border-bottom: 1px solid red;padding: .2em; ">Types of OS</h4>
+
+
+
+          <h6 class="text-danger"><strong>Explain different types of operating systems.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+
+          <p><b>List of different types of operating systems:</b></p>
+
+
+          <ol class="">
+            <li class="mt-3"><u>Batch Operating System.</u></li>
+            <li class="mt-1"><u>Multiprogramming Operating system.</u>
+            </li>
+            <li class="mt-1"><u>Time shared operating systems.</u>
+            </li>
+            <li class="mt-1"><u>Multiprocessor Operating System.</u>
+            </li><u>
+              <li class="mt-1">Distributed Operating System.
+            </u>
+            </li><u>
+              <li class="mt-1">Real time Operating System.
+            </u>
+            </li><u>
+              <li class="mt-1">Mobile Operating System.
+            </u>
+            </li>
+          </ol>
+
+          <h5>Batch Operating System</h5>
+
+          <p>The users of a batch operating system do not interact with the computer directly. Each user prepares his
+            job on an off-line device like punch cards and submits it to the computer operator. <br>
+
+            <img src="/img/os-batch.jpg" class="img-fluid mb-4 mt-3 " alt="Responsive image"
+              style="border-right: 2px solid dodgerblue;border-bottom: 2px solid dodgerblue;"> <br>
+
+            To speed up processing,jobs with similar needs are batched together and run as a group. The programmers
+            leave their programs with
+            the operator and the operator then sorts the programs with similar requirements into batches.
+          </p>
+          <b>The problems with Batch Systems are as follows −</b>
+          <ul class="mt-3">
+            <li class="mt-1"><u>1) Lack of interaction between the user and the job.</u></li>
+            <li class="mt-1"><u> 2) CPU is often idle, because the speed of the mechanical I/O devices is slower than
+                the CPU.</u>
+            </li>
+            <li class="mt-1"><u>3) Difficult to provide the desired priority</u></li>
+
+          </ul>
+
+
+          <h5>Multiprograming Operating System</h5>
+
+          <img src="/img/os-multiprogrm.PNG" class="img-fluid mb-4 mt-3 " alt="Responsive image"
+            style="border-bottom: 2px solid dodgerblue;border-top: 2px solid dodgerblue;"> <br>
+
+          <p>1. In this the operating system picks up and begins to execute one of the jobs from memory. <br><br>
+
+            2. Once this job needs an I/O operation operating system switches to another job (CPU and OS always busy).
+
+            <br><br> 3. Jobs in the memory are always less than the number of jobs on disk(Job Pool). <br><br>
+
+            4. If several jobs are ready to run at the same time, then the system chooses which one to run through the
+            process of CPU Scheduling.
+            <br><br>
+            5. In Non-multiprogrammed system, there are moments when CPU sits idle and does not do any work.
+            In Multiprogramming system, CPU will never be idle and keeps on processing.
+          </p>
+
+
+
+          <h5>Multiprocessor operating systems</h5>
+
+          <img src="/img/os-multiprocess.jpg" class="img-fluid mb-4 mt-3 " alt="Responsive image"> <br>
+
+
+          <p>A Multiprocessor system consists of several processors that share a common physical memory. Multiprocessor
+            system provides higher computing power and speed. In multiprocessor system all processors operate under
+            single operating system. Multiplicity of the processors and how they do act together are transparent to the
+            others.
+          </p>
+          <h6>Advantages</h6>
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u>Execution of several tasks by different processors concurrently, increases the system's
+                throughput
+                without speeding up the execution of a single task.</u>
+            </li>
+            <li class="mt-1"><u>If possible, system divides task into many subtasks and then these subtasks can be
+                executed in
+                parallel
+                in different processors. Thereby speeding up the execution of single tasks.</u>
+            </li>
+
+
+          </ul>
+
+          <h5>Distributed Operating System</h5>
+
+          <img src="/img/os-distri.png" class="img-fluid mb-4 mt-3 " alt="Responsive image"> <br>
+
+          <p>Distributed systems use multiple central processors to serve multiple real-time applications and multiple
+            users. <br> Data processing jobs are distributed among the processors accordingly.
+
+            <br> The processors communicate with one another through various communication lines (such as high-speed
+            buses or
+            telephone lines). <br> These are referred as loosely coupled systems or distributed systems. Processors
+            in a
+            distributed system may vary in size and function.
+            <br>These processors are referred as sites, nodes, computers,
+            and so on.
+          </p>
+
+          <h6>Advantages -</h6>
+          <ol class="mt-3 mb-3">
+            <li class="mt-1"><u>As there are multiple systems involved, user at one site can utilize the resources of
+                systems at
+                other
+                sites for resource-intensive tasks.</u>
+            </li>
+            <li class="mt-1"><u>Fast processing.</u>
+            </li>
+            <li class="mt-1"><u>Less load on the Host Machine.</u>
+            </li>
+          </ol>
+
+          <h5>Real Time Operating System</h5>
+
+
+          <img src="/img/os-realtime.png" class="img-fluid mb-4 mt-3 " alt="Responsive image"
+            style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+          <p>A real-time system is defined as a data processing system in which the time interval required to process
+            and respond to inputs is so small that it controls the environment. <br> The time taken by the system to
+            respond
+            to an input and display of required updated information is termed as the response time. So in this method,
+            the response time is very less as compared to online processing.
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u>Real-time systems are used when there are rigid time requirements on the operation of a
+                processor or
+                the
+                flow of data and real-time systems can be used as a control device in a dedicated application.</u></li>
+            <li class="mt-1"> <u>A real-time operating system must have well-defined, fixed time constraints, otherwise
+                the system
+                will
+                fail. For
+                example, Scientific experiments, medical imaging systems, industrial control systems, weapon systems,
+                robots, air traffic control systems, etc.</u></li>
+          </ul>
+          </p>
+          <p>
+          <blockquote>There are types of real time operating systems.</blockquote>
+          </p>
+
+          <b>1.Hard Real Time- systems -</b>
+          <p>Hard real-time systems guarantee that critical tasks complete on time. In hard real-time systems, secondary
+            storage is limited or missing and the data is stored in ROM. In these systems, virtual memory is almost
+            never found.</p>
+
+          <b>2.Soft Real Time- systems -</b>
+          <p>Soft real-time systems are less restrictive. A critical real-time task gets priority over other tasks and
+            retains the priority until it completes. Soft real-time systems have limited utility than hard real-time
+            systems. For example, multimedia, virtual reality, Advanced Scientific Projects like undersea exploration
+            and planetary rovers, etc</p>
+
+          <h5>Time Sharing Operating System</h5>
+
+
+
+
+          <img src="/img/os-timesharing.png" class="img-fluid mb-4 mt-3 pt-2 pb-2 " alt="Responsive image"
+            style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <p>1.Time-sharing is a technique which enables many people, located at various terminals, to use a particular
+            computer system at the same time. Time-sharing or multitasking is a logical extension of multiprogramming.
+            Processor's time which is shared among multiple users simultaneously is termed as time-sharing.
+            <br><br>
+
+            2.The main difference between Multiprogrammed Batch Systems and Time-Sharing Systems is that in case of
+            Multiprogrammed batch systems, the objective is to maximize processor use, whereas in Time-Sharing Systems,
+            the objective is to minimize response time.
+            <br><br>
+
+            3.Multiple jobs are executed by the CPU by switching between them, but the switches occur so frequently.
+            Thus,
+            the user can receive an immediate response. For example, in a transaction processing, the processor executes
+            each user program in a short burst or quantum of computation. That is, if n users are present, then each
+            user can get a time quantum. When the user submits the command, the response time is in few seconds at most.
+
+          </p>
+          <h5>Mobile Operating system</h5>
+
+
+          <img src="/img/os-mob-android.png" class="img-fluid mb-4 mt-3 " alt="Responsive image"
+            style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <blockquote>
+            <p>Handheld systems include Personal Digital Assistants(PDAs), such as Palm-Pilots or Cellular Telephones
+              with connectivity to a network such as the Internet.
+              They are usually of limited size due to which most handheld devices have a small amount of memory, include
+              slow processors, and feature small display screens.
+            </p>
+          </blockquote>
+          <hr>
+
+
+
+          <h4>Components Of Operating System</h4>
+          <br>
+          <h6 class="text-danger"><strong>Enlist system components. Describe any two in detail.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+          <p>List of operating system components:</p>
+
+          <img src="/img/os-components.png" class="img-fluid  " alt="Responsive image"
+            style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u>Process management</u></li>
+            <li class="mt-1"><u>Main memory management</u></li>
+            <li class="mt-1"><u>File management</u></li>
+            <li class="mt-1"><u>I/O system management</u></li>
+            <li class="mt-1"><u>Secondary storage management</u></li>
+          </ul>
+
+          <h5>Process Management</h5>
+          <p>The operating system manages many kinds of activities ranging from user programs to
+            system programs like printer spooler, name servers, file server etc. <br> Each of these activities
+            is encapsulated in a process. A process includes the complete execution context (code,
+            data, PC, registers, OS resources in use etc.). The basic unit of software that the operating
+            system deals with in scheduling the work done by the processor is either a process or a
+            thread, depending on the operating system. <br><br> It’s tempting to think of a process as an
+            application, but that gives an incomplete picture of how processes relate to the operating system and
+            hardware. <br> The application you see (word processor or spreadsheet or game) is,
+            indeed, a process, but that application may cause several other processes to begin, for tasks
+            like communications with other devices or other computers. There are also numerous
+            processes that run without giving you direct evidence that they ever exist. A process, then,
+            is software that performs some action and can be controlled by a user, by other applications
+            or by the operating system. <br><br> It is processes, rather than applications, that the operating
+            system controls and schedules for execution by the CPU. In a single-tasking system, the
+            schedule is straightforward. The operating system allows the application to begin running,
+            suspending the execution only long enough to deal with interrupts and user input.</p>
+
+          <h6>The five major activities of an operating system in regard to process management are -</h6>
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u> Suspension and resumption of processes.</u></li>
+            <li class="mt-1"><u> A mechanism for process synchronization.</u></li>
+            <li class="mt-1"><u> A mechanism for process communication.</u></li>
+            <li class="mt-1"><u> A mechanism for deadlock handling.</u></li>
+            <li class="mt-1"><u> Creation and deletion of user and system processes.</u></li>
+          </ul>
+
+          <h5>Main-Memory Management</h5>
+          <p>Services provided under Memory Management are directed to keeping track of memory
+            and allocating/de allocating it to various processes.
+            <br> The OS keeps a list of free memory
+            locations. Before a program is loaded in the memory from the disk, this MM consults the
+            free list, allocates the memory to the process, depending upon the program size and
+            updates the list of free memory. Primary-Memory or Main-Memory is a large array of
+            words or bytes. Each word or byte has its own address. Main-memory provides storage
+            that can be access directly by the CPU. That is to say for a program to be executed, it must
+            in the main memory.
+          </p>
+
+          <h6>The major activities of an operating in regard to memory-management are -</h6>
+
+          <ul class="mt-3 mb-3">
+            <li class="mt-1">Keeping track of which parts of memory are currently being used and by whom.</li>
+            <li class="mt-1"> Deciding which processes (or parts thereof) and data to move into and out of memory.</li>
+            <li class="mt-1"> Allocating and deallocating memory space as needed.</li>
+
+          </ul>
+
+
+          <h5>File Management</h5>
+          <p>A file is a collected of related information defined by its creator. Computer can store files
+            on the disk (secondary storage), which provide long term storage. Some examples of
+            storage media are magnetic tape, magnetic disk and optical disk. <br><br> Each of these media has
+            its own properties like speed, capacity, and data transfer rate and access methods. <br> A file
+            system normally organized into directories to ease their use. <br> These directories may contain
+            files and other directions.
+          </p>
+
+          <h6>The five main major activities of an operating system in regard to file management
+            are -</h6>
+
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u> The creation and deletion of files.</u></li>
+            <li class="mt-1"><u>The creation and deletion of directions.</u></li>
+            <li class="mt-1"><u>The support of primitives for manipulating files and directions.</u></li>
+            <li class="mt-1"><u>The mapping of files onto secondary storage.</u></li>
+            <li class="mt-1"><u>he backup of files on stable storage media.</u></li>
+          </ul>
+
+
+          <h5>I/O Device Management</h5>
+          <p>Input / Output device management provides an environment for the better interaction
+            between system and the I / O devices. To interact with I/O devices in an effective manner,
+            the operating system uses some special programs known as device driver.
+            <br>
+            <br> The device drivers take the data that operating system has defined as a file and then translate them
+            into
+            streams of bits or a series of laser pulses.
+            <br> The device driver is a specialized hardware
+            dependent computer program that enables another program, typically an operating system
+            to interact transparently with a hardware device, and usually provides the required interrupt
+            handling necessary for the time dependent hardware interfacing.
+
+          </p>
+
+          <h6> The I/O subsystem consists of several components -</h6>
+
+          <ul class="mt-3 mb-3">
+            <li class="mt-1"><u> A memory management component that includes buffering, caching, spooling</u></li>
+            <li class="mt-1"><u>A general device driver interface</u></li>
+            <li class="mt-1"><u> Drivers for specific hardware devices</u></li>
+          </ul>
+
+
+          <h5>Seconary Storage Management</h5>
+
+          <p>Systems have several levels of storage, including primary storage, secondary storage and
+            cache storage. Instructions and data must be placed in primary storage or cache to be
+            referenced by a running program.
+            <br>
+            <br> Because main memory is too small to accommodate all
+            data and programs, and its data are lost when power is lost, the computer system must
+            provide secondary storage to back up main memory.
+            <br> Secondary storage consists of tapes,
+            disks, and other media designed to hold information that will eventually be accessed in
+            primary storage (primary, secondary, cache) is ordinarily divided into bytes or words
+            consisting of a fixed number of bytes.
+            <br> Each location in storage has an address; the set of all
+            addresses available to a program is called an address space.
+
+          </p>
+
+          <h6> The three major activities of an operating system in regard to secondary storage
+            management are :</h6>
+
+          <ul class="mt-3 mb-3">
+            <li class="mt-2"><u> Managing the free space available on the secondary-storage device</u></li>
+            <li class="mt-2"><u> Allocation of storage space when new files have to be written.</u></li>
+            <l class="mt-2" i><u> Scheduling the requests for memory access.</u></li>
+          </ul>
+
+
+
+          <h4 style="border-bottom: 1px solid red;line-height: 2.1em;">Operating system operations</h4>
+          <br>
+          <h6 class="text-danger"><strong>Explain operating system operations.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+          <p>
+            An operating system is a construct that allows the user application programs to interact with the
+            system hardware.Operating system by itself does not provide any function but it provides an atmosphere in
+            which different applications and programs can do useful work.
+          </p>
+          <p>The major operations of the operating system are process management, memory management, device management
+            and file management. These are given in detail as follows:</p>
+
+
+
+          <ul class="mb-3 mt-3">
+            <li class="mt-1"><u>Process management</u></li>
+            <li class="mt-1"><u> Memory management</u></li>
+            <li class="mt-1"><u>Device management </u></li>
+            <li class="mt-1"><u>File management</u></li>
+          </ul>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;">
+            Process Management</h6>
+          <p>The operating system is responsible for managing the processes i.e assigning the processor to a process at
+            a time. This is known as process scheduling. The different algorithms used for process scheduling are FCFS
+            (first come first served), SJF (shortest job first), priority scheduling, round robin scheduling etc.
+            <br><br>
+
+            There are many scheduling queues that are used to handle processes in process management. When the processes
+            enter the system, they are put into the job queue. The processes that are ready to execute in the main
+            memory are kept in the ready queue. The processes that are waiting for the I/O device are kept in the device
+            queue.
+          </p>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;">
+            Memory Management</h6>
+          <p>Memory management plays an important part in operating system. It deals with memory and the moving of
+            processes from disk to primary memory for execution and back again.
+
+          </p>
+
+          The activities performed by the operating system for memory management are:
+
+
+          <ul class="mt-3 mb-4">
+            <li class="mt-2"><u>
+                The operating system assigns memory to the processes as required. This can be done using best fit, first
+                fit
+                and worst fit algorithms.</u></li>
+            <li class="mt-2"><u>
+                All the memory is tracked by the operating system i.e. it nodes what memory parts are in use by the
+                processes and which are empty.</u></li>
+            <li class="mt-2"><u>
+                The operating system deallocated memory from processes as required. This may happen when a process has
+                been
+                terminated or if it no longer needs the memory.</u>
+            </li>
+          </ul>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;">
+            Device Management</h6>
+
+          <p>There are many I/O devices handled by the operating system such as mouse, keyboard, disk drive etc.
+            <br> There
+            are different device drivers that can be connected to the operating system to handle a specific device. The
+            device controller is an interface between the device and the device driver. The user applications can access
+            all the I/O devices using the device drivers, which are device specific codes.
+
+          </p>
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;">
+            File Management</h6>
+          <p>Files are used to provide a uniform view of data storage by the operating system. All the files are mapped
+            onto physical devices that are usually non volatile so data is safe in the case of system failure.
+
+            <br> The files can be accessed by the system in two ways i.e. sequential access and direct access
+          </p>
+          <ul>
+            <li>
+              <h6>Sequential Access</h6>
+              <p>
+                The information in a file is processed in order using sequential access. The files records are accessed
+                on after another. Most of the file systems such as editors, compilers etc. use sequential access.
+              </p>
+            </li>
+            <li>
+              <h6>Direct Access</h6>
+              <p>
+                In direct access or relative access, the files can be accessed in random for read and write operations.
+                The direct access model is based on the disk model of a file, since it allows random accesses.
+              </p>
+            </li>
+          </ul>
+
+
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;">Program Management</h4>
+          <p>
+            Program Manager contains all the executable files of every application and program present in the computer,
+            and
+            is placed in the root directory of system.
+            <br>
+          </p>
+
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;">Resource Management</h4>
+
+          <p>Internally an Operating System acts as a manager of resources of the computer system such as processor,
+            memory, files, and I/O device.
+            <br>
+
+
+            <img src="/img/os-parts.png" class="img-fluid mt-2 mb-2 " alt="Responsive image"> <br>
+
+
+            In this role, the operating system keeps track of the status of each resource, and decides who gets a
+            resource, for how long and when.
+            In system that supports concurrent execution of program, the operating system resolves conflicting requests
+            for resources in manner that preserves system integrity, and in doing so attempts to optimize the resulting
+            performance.
+          </p>
+
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;">Security and protection
+          </h4>
+          <p>Security refers to providing a protection system to computer system resources such as CPU, memory, disk,
+            software programs and most importantly data/information stored in the computer system.
+            <br> If a computer program
+            is run by an unauthorized user, then he/she may cause severe damage to computer or data stored in it. So a
+            computer system must be protected against unauthorized access, malicious access to system memory, viruses,
+            worms etc.
+          </p>
+          <ul>
+            <li class="mt-1"><u>Authentication</u></li>
+            <li class="mt-1"><u> One Time passwords</u></li>
+            <li class="mt-1"><u> Program Threats</u></li>
+            <li class="mt-1"><u> System Threats</u></li>
+            <li class="mt-1"><u> Computer Security Classifications</u></li>
+          </ul>
+
+          <hr>
+
+          <nav class="blog-pagination mb-2 ml-3 mr-2">
+            <a class="btn btn-sm btn-outline-primary" href="comming_soon.html">Previous Chapter</a>
+            <a class="btn btn-sm btn-outline-primary" href="comming_soon.html">Next Chapter</a>
+          </nav>
+
+          <hr>
+
+        </div><!-- /.blog-main -->
+      </div>
+
+      <!-- about -->
+      <aside class="col-md-4 blog-sidebar mt-2" id="about">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0">Our intension behind developing this website is that We see , most of students often
+            surggule
+            searching the micro-project,notes during exams or submission. Thus we decided to upload all the notes and
+            micro-projects here.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="font-italic">Archieves</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="/comming_soon.html">SEN-Software Testing</a></li>
+            <li><a href="/comming_soon.html">DCC-Data Comunication & Network</a></li>
+            <li><a href="/comming_soon.html">JPR-Java Programing</a></li>
+            <li><a href="/comming_soon.html">GAD-GUI Apllication Development</a></li>
+            <li><a href="/comming_soon.html">MIC-Microprocessor</a></li>
+            <li><a href="/comming_soon.html">DSU-Data Structure using C</a></li>
+            <li><a href="/comming_soon.html">OOP-Object Oriented Programing using C++</a></li>
+            <li><a href="/comming_soon.html">DTE-Digital Techniques</a></li>
+            <li><a href="/comming_soon.html">CGR-Computer Graphics</a></li>
+          </ol>
+        </div>
+
+        <div class="ml-4">
+          <h4 class="font-italic">Social Media</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/bhagwatakash2001">www.github.com</a></li>
+            <li><a href="https://www.facebook.com/akash.bhagwat.3110/">www.facebook.com</a></li>
+            <li><a href="https://www.instagram.com/_akash_bhagwat/">www.instagram.com</a></li>
+            <li><a href="https://twitter.com/AkashBh73905037">www.twitter.com</a></li>
+          </ol>
+
+        </div>
+      </aside><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+    <hr>
+  </main>
+  
+  <!-- 1st project -->
+ 
+  <main role="main" class="container">
+    <div class="card mt-1 mb-3">
+      <div class="card-body">
+        Recent projects
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-md-8 blog-main">
+        <div class="blog-post ml-3 mr-2">
+          <h4 class="blog-post-title">Make a Simple Operating System</h4>
+          <p class="blog-post-meta"><a href="" class="badge badge-info mr-3">Download</a>~by Akash Bhagwat
+          </p>
+
+          <p> We'll make a basic Operating System in C#, don't worry, if you even know some basics of c++ or
+            java,
+            you'll understand the code.
+            <hr>
+
+            By end of this tutorial, you'll be able to make your cool operating system!
+          </p>
+
+          <img src="/img/osy-p.jpg" class="img-fluid" alt="Responsive image"><br><br>
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 1 The Concept</strong>
+          </div>
+          <p class="mt-2">So, how actually a OS works? I'll explain from the level of a electric circuit.
+            <br>
+
+            Most of you know logic gates in electric circuits. when many logic gates are connected, i.e.
+            billions of
+            transistors are connected together inside a chip, they can store 0s and 1s. Each gate could
+            store either
+            0 or 1.
+
+            Then the connected transistor forms a Micro-Controller or a Micro-Processor. Here we are going
+            to
+            program on the micro-processor which is in your computer.
+            <br><br>
+
+            Did you know that your computer can also run with a operating system!? Wonder how! Every chip in
+            your
+            computer can run individually without a microprocessor but then without OS, it can't do multi
+            tasking or
+            run multiple threads together like in simple words, play a video in which one time music can
+            play and
+            one time graphics can play. But both can't run together.
+            <br><br>
+
+            Because of an operating system, today you can listen to music while browsing the internet.
+
+            The OS works based on its kernel. The kernel stores all the library files and whenever we run a
+            program,
+            the program's code calls header files from the kernel. In windows, kernel is 'Win32'
+          </p>
+
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 2 Materials and Prerequisite Knowledge</strong>
+          </div> <br>
+          <p>What will you need- <br> </p>
+          <ul>
+            <li class="mb-2">Microsoft Visual Studio 2012/2013/2010 (Any Edition) </li>
+
+            <a href=" https://www.visualstudio.com/">Link: <code> https://www.visualstudio.com/</code></a>
+            <li class="mb-2  mt-2"> COSMOS User Development Kit Milestone 4 (C# Open Source Managed
+              Operating
+              System)</li>
+            <a href=" https://cosmos.codeplex.com/downloads/get/90082">
+              <code> https://cosmos.codeplex.com/downloads/</code></a>
+
+            <li class="mb-2 mt-2">Any Virtulization Software to run the OS. I'm using VMware Player.</li>
+
+            <li class="mb-2"> Perquisite Knowledge- <br>
+
+              Basics of C++, Java, .net would work</li>
+
+          </ul>
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 3 Introduction to COSMOS</strong>
+          </div> <br>
+
+          <p>Cosmos (C# Open Source Managed Operating System) is an operating system development kit which
+            uses Visual Studio as its development environment.
+            <br> Despite C# in the name, any .NET based
+            language can be used including VB.NET, Fortran, Delphi Prism, IronPython, F# and more. Cosmos
+            itself and the kernel routines are primarily written in C#, and thus the Cosmos name. Besides
+            that, NOSMOS (.NET Open Source Managed Operating System) sounds stupid.
+          </p>
+
+
+          <h6>Cosmos is not an operating system in the traditional sense, but instead it is an "Operating
+            System Kit", or as I like to say "Operating System Legos". </h6>
+
+          <p>Cosmos lets you create operating systems just as Visual Studio and C# normally let you create
+            applications. Most users can write
+            and boot their own operating system in just a few minutes, all using Visual Studio. Milestone 5
+            includes new features such as an integrated project type in Visual Studio, and an integrated
+            debugger.
+            <br><br> You can debug your operating system directly from Visual Studio using breakpoints.
+            Cosmos is available in two distributions, the developer kit (dev kit), and the user kit. The dev
+            kit is designed for users who want to work on Cosmos itself. The user kit is designed for those
+            who are interested in building their own operating system and doing some Cosmos work. The dev
+            kit might be thought of as the Cosmos SDK. Most users should start off with the user kit as it
+            is not so overwhelming like the dev kit. This article focuses on the user kit.
+          </p>
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 4 Writing Your First Operating System</strong>
+          </div> <br>
+          <p>So, first lets write a OS which can simply print some text on screen! <br>
+
+            For that install all of the software required that is mentioned in the previous step.
+          </p>
+          <ul>
+            <li class="mt-1">Open visual studio and navigate to File>New Project</li>
+            <li class="mt-1">In the new project dialog box, select COSMOS and then COSMOS Project in the
+              templates box. Name the project and click OK!</li>
+          </ul>
+
+
+          <img src="/img/osy-p1.png" class="img-fluid shadow mb-4 bg-white rounded" alt="Responsive image">
+
+          <ul>
+            <li class="mt-1"> Now you'll see a file "program.cs" in the solution explorer. Click and load
+              it.
+            </li>
+            <li class="mt-1"> You'll see a whole lot of code in it, don't be scared, we just need to edit
+              code under "public static void Init()" block only</li>
+          </ul>
+
+          <img src="/img/osy-p2.png" class="img-fluid shadow mb-4 bg-white rounded" alt="Responsive image">
+
+          <ul>
+            <li class="mt-1"> Now click on start button you see on visual studio toolbar or from Debug menu,
+              click "start debugging"</li>
+            <li class="mt-1">You'll see a COSMOS Builder window appear, without any modification, just boot
+              click build</li>
+
+          </ul>
+
+          <img src="/img/osy-p3.png" class="img-fluid mx-auto shadow mb-4 bg-white rounded" alt="Responsive image">
+
+          <ul>
+
+            <li class="mt-1">WOW! So that QEMU window appear? QEMU is actually a operating system emulator
+              so
+              you are seeing the code being executed.
+            </li>
+
+          </ul>
+          <p>Now lets make some modifications and personalize the
+            OS.</p>
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 5 Personalizing the OS</strong>
+          </div> <br>
+
+
+          <p>Now just make some simple changes in code, </p>
+          under <strong> public static void Init() </strong> Change<br><br>
+
+          <code>Console.WriteLine("Welcome! You just booted C# code. Please edit Program.cs to fit your needs");</code>
+          <br> <br> to <br><br>
+          <code> Console.WriteLine("Hello World! This is my first operating system");</code>
+
+          <img src="/img/osy-p4.png" class="img-fluid mx-auto shadow mb-4 mt-5 bg-white rounded" alt="Responsive image">
+
+          <br><br>
+          <p>So, you've changed Welcome! You just booted C# code. Please edit Program.cs to fit your needs to
+            Hello World! This is my first operating system. <br>
+
+            We've just edited the text. Now lets compile the code and see the output. Perform the steps in
+            previous step to compile the code. <br><br>
+
+            <img src="/img/osy-p5.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image">
+
+            Saw that! Text has changed! you can even put your name here. Congrats! you've won half the
+            battle by understanding the basics. But how about a operating system that takes input from user
+            and gives user a output? Just like command line operating systems or Linux terminal.
+          </p>
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 6 Making a Command Line OS</strong>
+          </div> <br>
+
+          <p>So here we'll make a command line operating system. As we saw the previous code, the code just
+            writes some text on screen via <b> Console.WriteLine() </b> function. Now we will write a OS
+            where the
+            user gives the input and the computer processes it. <br> <br>
+
+
+            <img src="/img/osy-p6.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"><br>
+
+            So, lets make a code which prints <b> Hello User! Thanks for using this operating system! </b>
+            when we
+            give hello as input to the computer. <br>
+
+            In programming, there are different kinds of loops which most of you know like If loop which
+            does the action if the conditions are met. So here will will use if loop and if the input of a
+            user is hello, then it will print the line we mentioned above.
+          </p>
+          <h6>Code : </h6>
+          <blockquote class="ml-5"><code>string input;<br><br>
+
+                        input = Console.ReadLine(); <br><br>
+                        
+                        if (input == "hello") <br>
+                        
+                        {  <br><br> Console.WriteLine("Hello User! Thanks for using this operating system!");<br><br>
+                        
+                        }</code></blockquote>
+
+          <p>Here in this code, we made a string named input in which we read some data. The If loop checks
+            that if the input matches the word hello, then it should print Hello User! Thanks for using this
+            operating system! <br><br>
+
+            Now lets go and execute this code!
+
+            You can now type into the operating system now! type hello <br>
+
+            Excited? Saw the output? <br><br>
+
+
+            <img src="/img/osy-p7.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+            You made your own command line OS. but how about adding many more features in this? Like if you
+            type about, it tells you the info about the OS and if you type help it shows the list of
+            commands? Lets do it in the next step.
+          </p>
+
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 7 Adding More Features to Our OS</strong>
+          </div> <br>
+
+          <p>So, lets add more features like about which displays COSMOS OS 1.0 and help which displays
+            <br><br>
+
+            <em> hello - Simple OS command</em><br><br>
+
+            <em>about - Know about OS</em><br><br>
+
+            Similarly like the previous step, make 2 more if loops.
+          </p>
+
+          <img src="/img/osy-p9.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded" alt="Responsive image">
+          <br>
+
+          <h6>Code :</h6>
+
+          <blockquote class="ml-5"><code>string input; <br><br>
+                            input = Console.ReadLine();<br><br>
+                            
+                            if (input == "hello")
+                            
+                            {<br><br> Console.WriteLine("Hello User! Thanks for using this operating system!"); <br><br>}<br><br>
+                            
+                            if (input == "about")
+                            
+                            { <br><br>Console.WriteLine("COSMOS OS 1.0 ");<br><br>
+                            
+                            }<br><br>
+                            
+                            
+                            
+                            if (input == "help")
+                            
+                            {<br><br>
+                            
+                            Console.WriteLine("hello - Simple OS command");
+                            
+                            Console.WriteLine("about - Know about OS ");<br><br>    
+                            
+                            }</code></blockquote>
+
+          <p>In this code as you see we've made 2 more if loops. Now execute the code and type <em> <b> about.
+              </b> </em> <br>
+            Saw that, it displays <em><b>COSMOS OS 1.0 </b></em> and then close the window and re-execute
+            the
+            code and then type
+            <em><b> help</b></em>. Saw that? This means everything is going good. <br><br>
+
+            Now every OS has a option of shut down or power off. So lets add features like shutdown and
+            restart.
+          </p>
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 8 Adding Shutdown and Restart Features</strong>
+          </div> <br>
+
+          <p>Adding shutdown and restart feature is also extremely easy. In cosmos the code to shutdown is
+            <strong>Cosmos.Sys.Deboot.ShutDown();</strong> and to restart is <br><strong>
+              Cosmos.Sys.Deboot.Reboot(); </strong>
+
+            <br><br> Now make IF loops which have input as <b> shutdown </b> and <b> restart </b>.
+          </p>
+
+          <h6>Code :</h6>
+          <blockquote><code>string input; <br><br>
+                        input = Console.ReadLine();<br><br>
+                        
+                        if (input == "hello") { <br><br>Console.WriteLine("Hello User! Thanks for using this operating system!");<br><br> }<br><br>
+                        
+                        if (input == "about") {<br><br> Console.WriteLine("COSMOS OS 1.0 ");
+                        
+                        <br><br>}<br><br>
+                        
+                        if (input == "help") { <br><br>Console.WriteLine("hello - Simple OS command"); <br><br>Console.WriteLine("about - Know about OS ");<br><br> }<br><br>
+                        
+                        if (input == "shutdown") {<br><br> Cosmos.Sys.Deboot.ShutDown();<br><br> }<br><br>
+                        
+                        if (input == "restart") {<br><br> Cosmos.Sys.Deboot.Reboot(); }</code></blockquote>
+
+          <p>Now execute the code and type restart. Saw it xD! It restarted! Now type shutdown. Saw it, the
+            window closed which means the OS shut down. <br><br>
+
+            <img src="/img/osy-p10.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+            This may be the most exciting part when you made a OS which can shutdown and restart itself!
+            <br>
+
+            <img src="/img/osy-p11.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+            Now lets improve this OS by giving it final touches.
+          </p>
+
+
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 9 Final Touches</strong>
+          </div> <br>
+
+          <p>In the final touches, we will use the switch case because it is much more simpler and better then
+            IF statement.
+
+            <img src="/img/osy-p12.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+            We will also make a command that when the user types a keyword which is not in
+            list of our commands, it should show No such command
+
+            <img src="/img/osy-p13.png" class="img-fluid mx-auto shadow mb-3 mt-3 bg-white rounded"
+              alt="Responsive image">
+
+            Just see the code once.
+          </p>
+          <h6>Code :</h6>
+          <blockquote class="ml-5"><code>while (true)<br>
+                    {<br><br>
+                    
+                    string command = Console.ReadLine();<br><br>
+                    
+                    switch (command) {<br><br>
+                    
+                    case "shutdown": { Cosmos.Sys.Deboot.ShutDown();<br><br>
+                    
+                    break;<br><br>
+                    
+                    }<br><br>
+                    
+                    case "help":<br>
+                    
+                    {
+                    
+                    Console.WriteLine("hello - Simple OS command");
+                    
+                    Console.WriteLine("about - Know about OS ");
+                    <br><br>
+                    break;
+                    
+                    }<br><br>
+                    
+                    case "about":<br>
+                    
+                    {<br><br>
+                    
+                    Console.WriteLine("COSMOS OS 1.0 ");
+                    
+                    break;<br><br>
+                    
+                    }<br><br>
+                    
+                    case "reboot": <br>{<br><br>
+                    
+                    Cosmos.Sys.Deboot.Reboot();
+                    
+                    break;<br><br>
+                    
+                    }<br><br>
+                    
+                    case "hello":<br> {<br><br>
+                    
+                    Console.WriteLine("Hello User! Thanks for using this operating system!");
+                    
+                    break;<br><br>
+                    
+                    }<br><br>
+                    
+                    default:<br> { <br><br>Console.WriteLine("No such command");
+                    
+                    command = null; break; } <br><br>}<br><br>
+                    
+                    }</code></blockquote>
+
+          <p>Ok, just copy the code into visual studio and execute the code. Note that we added the break;.
+            This is used in switch case. Now have the fun with your OS! <br><br>
+
+            <img src="/img/osy-p14.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+            Now try to type a wrong command like help me. this command was not defined so it shows No
+            command found. This means now our OS won't accept wrong commands. And try all commands. You may
+            have noted that now you can type another command after previous as we are taking input in a
+            constant loop.
+          </p>
+
+
+          <div class="container bg-light" style="margin-left:-10px;">
+            <strong class="text-dark">Step 10 Running & Testing the OS</strong>
+          </div> <br>
+
+          <p>So i'm now going to test the OS we made. I'll be using a Virtualization software to run the OS.
+            I'll be using VMware player which is free to download! <br><br>
+
+            <img src="/img/osy-p15.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+
+            Ok, so create a virtual machine and open C:\Users\ {Your Username} \AppData\Roaming\Cosmos User
+            Kit <br><br>
+
+            <img src="/img/osy-p16.png" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded"
+              alt="Responsive image"> <br>
+
+
+            Here you will find cosmos.iso file after you select build ISO in visual studio. Just boot this
+            file in VMware and enjoy your operating system! (make it full screen)
+          </p>
+
+          <img src="/img/osy-p.jpg" class="img-fluid mx-auto shadow mb-5 mt-3 bg-white rounded" alt="Responsive image">
+          <br>
+
+
+
+
+
+
+
+        </div><!-- /.blog-main -->
+        <hr>
+      </div>
+
+      <!-- about -->
+
+      <aside class="col-md-4 blog-sidebar mt-2" id="about">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0">Our intension behind developing this website is that We see , most of students often
+            surggule
+            searching for micro-project,notes during exams or submission.Thus we decided to upload all the
+            notes and
+            micro-projects here.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="font-italic">Archieves</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="/comming_soon.html">SEN-Software Testing</a></li>
+            <li><a href="/comming_soon.html">DCC-Data Comunication & Network</a></li>
+            <li><a href="/comming_soon.html">JPR-Java Programing</a></li>
+            <li><a href="/comming_soon.html">GAD-GUI Apllication Development</a></li>
+            <li><a href="/comming_soon.html">MIC-Microprocessor</a></li>
+            <li><a href="/comming_soon.html">DSU-Data Structure using C</a></li>
+            <li><a href="/comming_soon.html">OOP-Object Oriented Programing using C++</a></li>
+            <li><a href="/comming_soon.html">DTE-Digital Techniques</a></li>
+            <li><a href="/comming_soon.html">CGR-Computer Graphics</a></li>
+          </ol>
+        </div>
+
+        <div class="ml-4">
+          <h4 class="font-italic">Social Media</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/bhagwatakash2001">www.github.com</a></li>
+            <li><a href="https://www.facebook.com/akash.bhagwat.3110/">www.facebook.com</a></li>
+            <li><a href="https://www.instagram.com/_akash_bhagwat/">www.instagram.com</a></li>
+            <li><a href="https://twitter.com/AkashBh73905037">www.twitter.com</a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+
+  </main>
+
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <h1 class="footer__logo">uCoder.com </h1>
+    <div class="footer__addr">
+      <h2>Contact</h2>
+      <address>
+        Nilam Appt.,Building No.6,Kotamgaon Road,Yeola Dist.Nasik India.<br>
+        <a class="footer__btn" href="https://www.google.com/gmail/">Email Us</a>
+      </address>
+    </div>
+
+    <ul class="footer__nav">
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+
+          <li>
+            <a href="#">Automation</a>
+          </li>
+
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p> Special thanks for visiting our wesite.<br>&copy; 2019 Something. All rights reserved </p>
+
+    </div>
+  </footer>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

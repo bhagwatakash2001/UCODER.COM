@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board
+    </title>    
+    <link rel='icon' href='/img/Angular PNG.png' type='image/PNG' />
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        button{
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="/soundboard/applause3.mp3" id="1"></audio>
+    <audio src="/soundboard/boo2.mp3" id="2"></audio>
+    <audio src="/soundboard/Meowing-cat-sound.mp3" id="3"></audio>
+    <audio src="/soundboard/Tada-sound.mp3" id="4"></audio>
+    <audio src="/soundboard/Wrong-answer-sound-effect.mp3" id="5"></audio>
+    <audio src="/soundboard/Crow-bird-krah-4-times.mp3" id="6"></audio>
+
+    <button id="btn1">Applause</button>
+    <button id="btn2">Boo</button>
+    <button id="btn3">Cat</button>
+    <button id="btn4">Tada</button>
+    <button id="btn5">Wrong</button>
+    <button id="btn6">Bird</button>
+<script>
+    let btn1 = document.getElementById('btn1');
+    let btn2 = document.getElementById('btn2');
+    let btn3 = document.getElementById('btn3');
+    let btn4 = document.getElementById('btn4');
+    let btn5 = document.getElementById('btn5');
+    let btn6 = document.getElementById('btn6');
+
+    btn1.addEventListener('click', ()=>{
+        document.getElementById('1').play();
+    })
+    btn2.addEventListener('click', ()=>{
+        document.getElementById('2').play();
+    })
+    btn3.addEventListener('click', ()=>{
+        document.getElementById('3').play();
+    })
+    btn4.addEventListener('click', ()=>{
+        document.getElementById('4').play();
+    })
+    btn5.addEventListener('click', ()=>{
+        document.getElementById('5').play();
+    })
+    btn6.addEventListener('click', ()=>{
+        document.getElementById('6').play();
+    })
+    
+</script>
+
+
+</body>
+
+</html>

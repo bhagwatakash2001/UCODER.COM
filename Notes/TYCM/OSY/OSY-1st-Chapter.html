@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>uCoder-heaven for developers</title>
+
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <!-- Sticky Social icons -->
+
+  <!-- Load font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/akash.bhagwat.3110/" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/AkashBh73905037" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/_akash_bhagwat/" class="google"><i class="fa fa-instagram"></i></a>
+    <a href="https://wa.me/+918766800955" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark text-light fixed-top" style="background-color: black;">
+    <a class="navbar-brand" href="/">
+      <h3>uCoder.com</h3>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/" style="font-size: 16px;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" style="font-size: 16px;">
+            Topics
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #f1f1f1;">
+            <a class="dropdown-item" href="/projects.html">Projects</a>
+            <a class="dropdown-item" href="/notes.html">Notes</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about.html" style="font-size: 18px;">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html" style="font-size: 16px;">Contact</a>
+        </li>
+        
+
+      </ul>
+      <button class="btn btn-light my-2 btn-sm my-sm-0" type="submit" data-toggle="modal"
+        data-target="#loginModal">Login</button>
+      <a href="/SignUp.html"><button class="btn btn-warning btn-sm my-2 my-sm-0 ml-1">SignUp</button></a>
+    </div>
+  </nav>
+
+  <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Log into your account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+            </div>
+            <button type="submit" class="btn btn-danger">Login</button>
+
+            <button type="reset" class="btn btn-primary">Reset</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <!-- breadcrumb -->
+ <nav aria-label="breadcrumb" style="margin-top: -1em;">
+  <ol class="breadcrumb " style="background-color: #e3f2fd;">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="/notes.html">Notes</a></li>
+    <li class="breadcrumb-item"><a href="/Notes/TYCM/OSY/N-OSY-Home.html">OSY Notes </a></li>
+    <li class="breadcrumb-item active" aria-current="page">1st Chapter</li>
+  </ol>
+</nav>
+
+
+
+  
+  <!-- Blog Posts -->
+  <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-8 blog-main">
+
+        <div class="blog-post ml-3 mr-2">
+          <h2 class="blog-post-title">Overview of operating system</h2>       
+
+          <p class="blog-post-meta">Sept 6, 2020 by <a class="text-primary">G.N.Jorvekar Sir</a></p>
+
+          <p>An Operating System (OS) is an interface(imediator) between a computer user and computer hardware</p>
+
+          <hr>
+          <p><strong> An operating system is a software which performs all the basic tasks like file management, memory
+              management, process management, handling input and output, and controlling peripheral devices such as disk
+              drives and printers.</strong> <br></p>
+
+          <p>Some popular Operating Systems include Linux Operating System, Windows Operating System, VMS, OS/400, AIX,
+            z/OS, etc.</p>
+
+          <img src="/img/os-ex.png" class="img-fluid mt-3 mb-4" alt="Responsive image">
+
+
+          <h6 class="text-danger"><strong>Explain different generations of operating systems.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+
+
+          <p class="mt-3"> <strong> 1. First generation 1945 – 1955 - </strong>
+            The earliest electronic digital computers had no operating systems.
+            Machines of the time were so primitive that programs were often
+            entered one bit at time on rows of mechanical switches (plug boards).
+            Programming languages were unknown (not even assembly
+            languages).</p>
+
+
+          <p class="mt-3"> <strong>2.Second generation 1955 – 1965 - </strong>
+
+            By the early 1950's, the routine had improved somewhat with the
+            introduction of punch cards.
+            The General Motors Research Laboratories implemented the first
+            operating systems in early 1950's for their IBM 701. The system of
+            the 50's generally ran one job at a time. These were called singlestream
+            batch processing systems because programs and data were
+            submitted in groups or batches.
+          </p>
+
+          <p class="mt-3"> <strong> 3. Third generation 1965 – 1980 - </strong>
+
+            The systems of the 1960's were also batch processing systems, but
+            they were able to take better advantage of the computer's resources by
+            running several jobs at once. So operating systems designers
+            developed the concept of multiprogramming in which several jobs are
+            in main memory at once; a processor is switched from job to job as
+            needed to keep several jobs advancing while keeping the peripheral
+            devices in use.
+          </p>
+
+          <p class="mt-3"> <strong> 4. Fourth generation 1980 –</strong>
+
+            With the development of LSI (Large Scale Integration) circuits,
+            chips, operating system entered in the system entered in the personal
+            computer and the workstation age. Microprocessor technology
+            evolved to the point that it becomes possible to build desktop
+            computers as powerful as the mainframes of the 1970s.
+          </p>
+          
+          <h4  style="margin-bottom: 20px ;border-bottom: 1px solid red;padding: .2em; ">Types of OS</h4>
+        
+
+
+          <h6 class="text-danger"><strong>Explain different types of operating systems.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+
+          <p><b>List of different types of operating systems:</b></p>
+
+
+          <ol class="">
+            <li class="mt-3"><u>Batch Operating System.</u></li>
+            <li  class="mt-1"><u>Multiprogramming Operating system.</u>
+            </li>
+            <li class="mt-1"><u>Time shared operating systems.</u>
+            </li>
+            <li class="mt-1"><u>Multiprocessor Operating System.</u>
+            </li><u>
+              <li class="mt-1">Distributed Operating System.
+            </u>
+            </li><u>
+              <li class="mt-1">Real time Operating System.
+            </u>
+            </li><u>
+              <li class="mt-1">Mobile Operating System.
+            </u>
+            </li>
+          </ol>
+
+          <h5>Batch Operating System</h5>
+
+          <p>The users of a batch operating system do not interact with the computer directly. Each user prepares his
+            job on an off-line device like punch cards and submits it to the computer operator. <br> 
+
+            <img src="/img/os-batch.jpg" class="img-fluid mb-4 mt-3 "
+            alt="Responsive image" style="border-right: 2px solid dodgerblue;border-bottom: 2px solid dodgerblue;"> <br>
+            
+            To speed up processing,jobs with similar needs are batched together and run as a group. The programmers leave their programs with
+            the operator and the operator then sorts the programs with similar requirements into batches.</p>
+          <b>The problems with Batch Systems are as follows −</b>
+          <ul class="mt-3">
+            <li class="mt-1"><u>1) Lack of interaction between the user and the job.</u></li>
+            <li class="mt-1"><u> 2) CPU is often idle, because the speed of the mechanical I/O devices is slower than the CPU.</u>
+            </li>
+            <li class="mt-1"><u>3) Difficult to provide the desired priority</u></li>
+
+          </ul>
+
+
+          <h5>Multiprograming Operating System</h5>
+
+          <img src="/img/os-multiprogrm.PNG" class="img-fluid mb-4 mt-3 "
+          alt="Responsive image" style="border-bottom: 2px solid dodgerblue;border-top: 2px solid dodgerblue;"> <br>
+
+          <p>1. In this the operating system picks up and begins to execute one of the jobs from memory. <br><br>
+
+            2. Once this job needs an I/O operation operating system switches to another job (CPU and OS always busy).
+           
+            <br><br> 3. Jobs in the memory are always less than the number of jobs on disk(Job Pool). <br><br>
+
+            4. If several jobs are ready to run at the same time, then the system chooses which one to run through the
+            process of CPU Scheduling.
+            <br><br>
+            5. In Non-multiprogrammed system, there are moments when CPU sits idle and does not do any work.
+            In Multiprogramming system, CPU will never be idle and keeps on processing.
+          </p>
+
+
+
+          <h5>Multiprocessor operating systems</h5>
+
+          <img src="/img/os-multiprocess.jpg" class="img-fluid mb-4 mt-3 "
+          alt="Responsive image" > <br>
+
+
+          <p>A Multiprocessor system consists of several processors that share a common physical memory. Multiprocessor
+            system provides higher computing power and speed. In multiprocessor system all processors operate under
+            single operating system. Multiplicity of the processors and how they do act together are transparent to the
+            others.
+          </p>
+          <h6>Advantages</h6>
+          <ul class="mt-3 mb-3">
+            <li class="mt-1" ><u>Execution of several tasks by different processors concurrently, increases the system's throughput
+                without speeding up the execution of a single task.</u>
+            </li>
+            <li class="mt-1" ><u>If possible, system divides task into many subtasks and then these subtasks can be executed in
+                parallel
+                in different processors. Thereby speeding up the execution of single tasks.</u>
+            </li>
+
+
+          </ul>
+
+          <h5>Distributed Operating System</h5>
+
+          <img src="/img/os-distri.png" class="img-fluid mb-4 mt-3 "
+          alt="Responsive image" > <br>
+
+          <p>Distributed systems use multiple central processors to serve multiple real-time applications and multiple
+            users. <br> Data processing jobs are distributed among the processors accordingly.
+
+            <br> The processors communicate with one another through various communication lines (such as high-speed
+            buses or
+            telephone lines). <br> These are referred as loosely coupled systems or distributed systems. Processors
+            in a
+            distributed system may vary in size and function.
+            <br>These processors are referred as sites, nodes, computers,
+            and so on.</p>
+
+          <h6>Advantages -</h6>
+          <ol class="mt-3 mb-3" >
+            <li class="mt-1" ><u>As there are multiple systems involved, user at one site can utilize the resources of systems at
+                other
+                sites for resource-intensive tasks.</u>
+            </li>
+            <li class="mt-1" ><u>Fast processing.</u>
+            </li>
+            <li class="mt-1" ><u>Less load on the Host Machine.</u>
+            </li>
+          </ol>
+
+          <h5>Real Time Operating System</h5>
+
+
+          <img src="/img/os-realtime.png" class="img-fluid mb-4 mt-3 "
+          alt="Responsive image" style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+          <p>A real-time system is defined as a data processing system in which the time interval required to process
+            and respond to inputs is so small that it controls the environment. <br> The time taken by the system to
+            respond
+            to an input and display of required updated information is termed as the response time. So in this method,
+            the response time is very less as compared to online processing.
+          <ul class="mt-3 mb-3" >
+            <li class="mt-1" ><u>Real-time systems are used when there are rigid time requirements on the operation of a processor or
+                the
+                flow of data and real-time systems can be used as a control device in a dedicated application.</u></li>
+            <li class="mt-1" > <u>A real-time operating system must have well-defined, fixed time constraints, otherwise the system
+                will
+                fail. For
+                example, Scientific experiments, medical imaging systems, industrial control systems, weapon systems,
+                robots, air traffic control systems, etc.</u></li>
+          </ul>
+          </p>
+          <p>
+          <blockquote>There are types of real time operating systems.</blockquote>
+          </p>
+
+          <b>1.Hard Real Time- systems -</b>
+          <p>Hard real-time systems guarantee that critical tasks complete on time. In hard real-time systems, secondary
+            storage is limited or missing and the data is stored in ROM. In these systems, virtual memory is almost
+            never found.</p>
+
+          <b>2.Soft Real Time- systems -</b>
+          <p>Soft real-time systems are less restrictive. A critical real-time task gets priority over other tasks and
+            retains the priority until it completes. Soft real-time systems have limited utility than hard real-time
+            systems. For example, multimedia, virtual reality, Advanced Scientific Projects like undersea exploration
+            and planetary rovers, etc</p>
+
+          <h5>Time Sharing Operating System</h5>
+
+
+
+          
+          <img src="/img/os-timesharing.png" class="img-fluid mb-4 mt-3 pt-2 pb-2 "
+          alt="Responsive image" style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <p>1.Time-sharing is a technique which enables many people, located at various terminals, to use a particular
+            computer system at the same time. Time-sharing or multitasking is a logical extension of multiprogramming.
+            Processor's time which is shared among multiple users simultaneously is termed as time-sharing.
+            <br><br>
+
+            2.The main difference between Multiprogrammed Batch Systems and Time-Sharing Systems is that in case of
+            Multiprogrammed batch systems, the objective is to maximize processor use, whereas in Time-Sharing Systems,
+            the objective is to minimize response time.
+            <br><br>
+
+            3.Multiple jobs are executed by the CPU by switching between them, but the switches occur so frequently.
+            Thus,
+            the user can receive an immediate response. For example, in a transaction processing, the processor executes
+            each user program in a short burst or quantum of computation. That is, if n users are present, then each
+            user can get a time quantum. When the user submits the command, the response time is in few seconds at most.
+
+          </p>
+          <h5>Mobile Operating system</h5>
+
+
+          <img src="/img/os-mob-android.png" class="img-fluid mb-4 mt-3 "
+          alt="Responsive image" style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <blockquote>
+            <p>Handheld systems include Personal Digital Assistants(PDAs), such as Palm-Pilots or Cellular Telephones
+              with connectivity to a network such as the Internet.
+              They are usually of limited size due to which most handheld devices have a small amount of memory, include
+              slow processors, and feature small display screens.
+            </p>
+          </blockquote>
+          <hr>
+
+
+
+          <h4>Components Of Operating System</h4>
+          <br>
+          <h6 class="text-danger"><strong>Enlist system components. Describe any two in detail.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+          <p>List of operating system components:</p>
+
+            <img src="/img/os-components.png" class="img-fluid  "
+            alt="Responsive image" style="border-bottom: 2px solid #f7f7f7;border-top: 2px solid #f7f7f7;"> <br>
+
+
+
+          <ul class="mt-3 mb-3" >
+            <li class="mt-1" ><u>Process management</u></li>
+            <li class="mt-1" ><u>Main memory management</u></li>
+            <li class="mt-1" ><u>File management</u></li>
+            <li class="mt-1" ><u>I/O system management</u></li>
+            <li class="mt-1" ><u>Secondary storage management</u></li>
+          </ul>
+
+          <h5>Process Management</h5>
+          <p>The operating system manages many kinds of activities ranging from user programs to
+            system programs like printer spooler, name servers, file server etc. <br> Each of these activities
+            is encapsulated in a process. A process includes the complete execution context (code,
+            data, PC, registers, OS resources in use etc.). The basic unit of software that the operating
+            system deals with in scheduling the work done by the processor is either a process or a
+            thread, depending on the operating system. <br><br> It’s tempting to think of a process as an
+            application, but that gives an incomplete picture of how processes relate to the operating system and
+            hardware. <br> The application you see (word processor or spreadsheet or game) is,
+            indeed, a process, but that application may cause several other processes to begin, for tasks
+            like communications with other devices or other computers. There are also numerous
+            processes that run without giving you direct evidence that they ever exist. A process, then,
+            is software that performs some action and can be controlled by a user, by other applications
+            or by the operating system. <br><br> It is processes, rather than applications, that the operating
+            system controls and schedules for execution by the CPU. In a single-tasking system, the
+            schedule is straightforward. The operating system allows the application to begin running,
+            suspending the execution only long enough to deal with interrupts and user input.</p>
+
+          <h6>The five major activities of an operating system in regard to process management are -</h6>
+          <ul class="mt-3 mb-3" >
+            <li class="mt-1" ><u> Suspension and resumption of processes.</u></li>
+            <li class="mt-1" ><u> A mechanism for process synchronization.</u></li>
+            <li class="mt-1" ><u> A mechanism for process communication.</u></li>
+            <li class="mt-1" ><u> A mechanism for deadlock handling.</u></li>
+            <li class="mt-1" ><u> Creation and deletion of user and system processes.</u></li>
+          </ul>
+
+          <h5>Main-Memory Management</h5>
+          <p>Services provided under Memory Management are directed to keeping track of memory
+            and allocating/de allocating it to various processes.
+            <br> The OS keeps a list of free memory
+            locations. Before a program is loaded in the memory from the disk, this MM consults the
+            free list, allocates the memory to the process, depending upon the program size and
+            updates the list of free memory. Primary-Memory or Main-Memory is a large array of
+            words or bytes. Each word or byte has its own address. Main-memory provides storage
+            that can be access directly by the CPU. That is to say for a program to be executed, it must
+            in the main memory.</p>
+
+          <h6>The major activities of an operating in regard to memory-management are -</h6>
+
+          <ul class="mt-3 mb-3" >
+            <li class="mt-1" >Keeping track of which parts of memory are currently being used and by whom.</li>
+            <li class="mt-1" > Deciding which processes (or parts thereof) and data to move into and out of memory.</li>
+            <li class="mt-1" > Allocating and deallocating memory space as needed.</li>
+
+          </ul>
+
+
+          <h5>File Management</h5>
+          <p>A file is a collected of related information defined by its creator. Computer can store files
+            on the disk (secondary storage), which provide long term storage. Some examples of
+            storage media are magnetic tape, magnetic disk and optical disk. <br><br> Each of these media has
+            its own properties like speed, capacity, and data transfer rate and access methods. <br> A file
+            system normally organized into directories to ease their use. <br> These directories may contain
+            files and other directions.
+          </p>
+
+          <h6>The five main major activities of an operating system in regard to file management
+            are -</h6>
+
+          <ul  class="mt-3 mb-3" >
+            <li  class="mt-1"><u> The creation and deletion of files.</u></li>
+            <li  class="mt-1"><u>The creation and deletion of directions.</u></li>
+            <li class="mt-1"><u>The support of primitives for manipulating files and directions.</u></li>
+            <li  class="mt-1"><u>The mapping of files onto secondary storage.</u></li>
+            <li  class="mt-1"><u>he backup of files on stable storage media.</u></li>
+          </ul>
+
+
+          <h5>I/O Device Management</h5>
+          <p>Input / Output device management provides an environment for the better interaction
+            between system and the I / O devices. To interact with I/O devices in an effective manner,
+            the operating system uses some special programs known as device driver.
+            <br>
+            <br> The device drivers take the data that operating system has defined as a file and then translate them
+            into
+            streams of bits or a series of laser pulses.
+            <br> The device driver is a specialized hardware
+            dependent computer program that enables another program, typically an operating system
+            to interact transparently with a hardware device, and usually provides the required interrupt
+            handling necessary for the time dependent hardware interfacing.
+
+          </p>
+
+          <h6> The I/O subsystem consists of several components -</h6>
+
+          <ul class="mt-3 mb-3" >
+            <li class="mt-1"><u> A memory management component that includes buffering, caching, spooling</u></li>
+            <li class="mt-1"><u>A general device driver interface</u></li>
+            <li class="mt-1"><u> Drivers for specific hardware devices</u></li>
+          </ul>
+
+
+          <h5>Seconary Storage Management</h5>
+
+          <p>Systems have several levels of storage, including primary storage, secondary storage and
+            cache storage. Instructions and data must be placed in primary storage or cache to be
+            referenced by a running program.
+            <br>
+            <br> Because main memory is too small to accommodate all
+            data and programs, and its data are lost when power is lost, the computer system must
+            provide secondary storage to back up main memory.
+            <br> Secondary storage consists of tapes,
+            disks, and other media designed to hold information that will eventually be accessed in
+            primary storage (primary, secondary, cache) is ordinarily divided into bytes or words
+            consisting of a fixed number of bytes.
+            <br> Each location in storage has an address; the set of all
+            addresses available to a program is called an address space.
+
+          </p>
+
+          <h6> The three major activities of an operating system in regard to secondary storage
+            management are :</h6>
+
+          <ul class="mt-3 mb-3" >
+            <li class="mt-2" ><u> Managing the free space available on the secondary-storage device</u></li>
+            <li class="mt-2" ><u> Allocation of storage space when new files have to be written.</u></li>
+            <l class="mt-2" i><u> Scheduling the requests for memory access.</u></li>
+          </ul>
+
+        
+
+          <h4 style="border-bottom: 1px solid red;line-height: 2.1em;" >Operating system operations</h4>
+          <br>
+          <h6 class="text-danger"><strong>Explain operating system operations.</strong></h6>
+          <br>
+          <h6><strong> <a class="text-primary"> Ans - </a></strong></h6>
+          <p>
+            An operating system is a construct that allows the user application programs to interact with the
+            system hardware.Operating system by itself does not provide any function but it provides an atmosphere in
+            which different applications and programs can do useful work.
+          </p>
+          <p>The major operations of the operating system are process management, memory management, device management
+            and file management. These are given in detail as follows:</p>       
+
+
+
+          <ul class="mb-3 mt-3" >
+            <li class="mt-1" ><u>Process management</u></li>
+            <li class="mt-1" ><u> Memory management</u></li>
+            <li class="mt-1" ><u>Device management </u></li>
+            <li class="mt-1" ><u>File management</u></li>
+          </ul>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;" >Process Management</h6>
+          <p>The operating system is responsible for managing the processes i.e assigning the processor to a process at
+            a time. This is known as process scheduling. The different algorithms used for process scheduling are FCFS
+            (first come first served), SJF (shortest job first), priority scheduling, round robin scheduling etc.
+            <br><br>
+
+            There are many scheduling queues that are used to handle processes in process management. When the processes
+            enter the system, they are put into the job queue. The processes that are ready to execute in the main
+            memory are kept in the ready queue. The processes that are waiting for the I/O device are kept in the device
+            queue.</p>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;" >Memory Management</h6>
+          <p>Memory management plays an important part in operating system. It deals with memory and the moving of
+            processes from disk to primary memory for execution and back again.
+
+          </p>
+
+          The activities performed by the operating system for memory management are:
+
+
+          <ul class="mt-3 mb-4">
+            <li class="mt-2"   ><u>
+                The operating system assigns memory to the processes as required. This can be done using best fit, first
+                fit
+                and worst fit algorithms.</u></li>
+            <li class="mt-2"  ><u>
+                All the memory is tracked by the operating system i.e. it nodes what memory parts are in use by the
+                processes and which are empty.</u></li>
+            <li class="mt-2"  ><u>
+                The operating system deallocated memory from processes as required. This may happen when a process has
+                been
+                terminated or if it no longer needs the memory.</u>
+            </li>
+          </ul>
+
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;" >Device Management</h6>
+
+          <p>There are many I/O devices handled by the operating system such as mouse, keyboard, disk drive etc.
+            <br> There
+            are different device drivers that can be connected to the operating system to handle a specific device. The
+            device controller is an interface between the device and the device driver. The user applications can access
+            all the I/O devices using the device drivers, which are device specific codes.
+
+          </p>
+          <h6 style="border-left: 4px solid tomato;line-height: 2.1em; background-color:#f7f7f7; padding-left: .5em;" >File Management</h6>
+          <p>Files are used to provide a uniform view of data storage by the operating system. All the files are mapped
+            onto physical devices that are usually non volatile so data is safe in the case of system failure.
+
+            <br> The files can be accessed by the system in two ways i.e. sequential access and direct access </p>
+          <ul>
+            <li>
+              <h6>Sequential Access</h6>
+              <p>
+                The information in a file is processed in order using sequential access. The files records are accessed
+                on after another. Most of the file systems such as editors, compilers etc. use sequential access.
+              </p>
+            </li>
+            <li>
+              <h6>Direct Access</h6>
+              <p>
+                In direct access or relative access, the files can be accessed in random for read and write operations.
+                The direct access model is based on the disk model of a file, since it allows random accesses.
+              </p>
+            </li>
+          </ul>
+
+       
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;" >Program Management</h4>
+          <p>
+            Program Manager contains all the executable files of every application and program present in the computer,
+            and
+            is placed in the root directory of system.
+            <br>
+          </p>
+
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;" >Resource Management</h4>
+         
+          <p>Internally an Operating System acts as a manager of resources of the computer system such as processor,
+            memory, files, and I/O device.
+            <br>
+
+
+            <img src="/img/os-parts.png" class="img-fluid mt-2 mb-2 "
+            alt="Responsive image" > <br>
+
+
+            In this role, the operating system keeps track of the status of each resource, and decides who gets a
+            resource, for how long and when.
+            In system that supports concurrent execution of program, the operating system resolves conflicting requests
+            for resources in manner that preserves system integrity, and in doing so attempts to optimize the resulting
+            performance.</p>
+
+          <h4 style="border-bottom: 1px solid tomato;line-height: 2.1em; padding-left: .5em;" >Sequrity and protection</h4>
+          <p>Security refers to providing a protection system to computer system resources such as CPU, memory, disk,
+            software programs and most importantly data/information stored in the computer system.
+            <br> If a computer program
+            is run by an unauthorized user, then he/she may cause severe damage to computer or data stored in it. So a
+            computer system must be protected against unauthorized access, malicious access to system memory, viruses,
+            worms etc.</p>
+          <ul>
+            <li class="mt-1" ><u>Authentication</u></li>
+            <li class="mt-1" ><u> One Time passwords</u></li>
+            <li class="mt-1" ><u> Program Threats</u></li>
+            <li class="mt-1" ><u> System Threats</u></li>
+            <li class="mt-1" ><u> Computer Security Classifications</u></li>
+          </ul>
+
+          <hr>
+
+          <nav class="blog-pagination mb-2 ml-3 mr-2">
+            <a class="btn btn-sm btn-outline-primary" href="/comming_soon.html">Previous Chapter</a>
+            <a class="btn btn-sm btn-outline-primary" href="/comming_soon.html">Next Chapter</a>
+          </nav>
+
+          <hr>
+
+        </div><!-- /.blog-main -->       
+      </div>
+      
+       <!-- about -->
+       <aside class="col-md-4 blog-sidebar mt-2" id="about">
+        <div class="p-4 mb-3 bg-light rounded">
+          <h4 class="font-italic">About</h4>
+          <p class="mb-0">Our intension behind developing this website is that We see , most of students often
+            surggule
+            searching the micro-project,notes during exams or submission. Thus we decided to upload all the notes and
+            micro-projects here.</p>
+        </div>
+
+        <div class="p-4">
+          <h4 class="font-italic">Archieves</h4>
+          <ol class="list-unstyled mb-0">
+            <li><a href="/comming_soon.html">SEN-Software Testing</a></li>
+            <li><a href="/comming_soon.html">DCC-Data Comunication & Network</a></li>
+            <li><a href="/comming_soon.html">JPR-Java Programing</a></li>
+            <li><a href="/comming_soon.html">GAD-GUI Apllication Development</a></li>
+            <li><a href="/comming_soon.html">MIC-Microprocessor</a></li>
+            <li><a href="/comming_soon.html">DSU-Data Structure using C</a></li>
+            <li><a href="/comming_soon.html">OOP-Object Oriented Programing using C++</a></li>
+            <li><a href="/comming_soon.html">DTE-Digital Techniques</a></li>
+            <li><a href="/comming_soon.html">CGR-Computer Graphics</a></li>
+          </ol>
+        </div>
+
+        <div class="ml-4">
+          <h4 class="font-italic">Social Media</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://github.com/bhagwatakash2001">www.github.com</a></li>
+            <li><a href="https://www.facebook.com/akash.bhagwat.3110/">www.facebook.com</a></li>
+            <li><a href="https://www.instagram.com/_akash_bhagwat/">www.instagram.com</a></li>
+            <li><a href="https://twitter.com/AkashBh73905037">www.twitter.com</a></li>
+          </ol>
+        </div>
+      </aside><!-- /.blog-sidebar -->
+    </div><!-- /.row -->
+
+  </main>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <h1 class="footer__logo">uCoder.com </h1>
+    <div class="footer__addr">
+      <h2>Contact</h2>
+      <address>
+        Nilam Appt.,Building No.6,Kotamgaon Road,Yeola Dist.Nasik India.<br>
+        <a class="footer__btn" href="https://www.google.com/gmail/">Email Us</a>
+      </address>
+    </div>
+
+    <ul class="footer__nav">
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+
+          <li>
+            <a href="#">Automation</a>
+          </li>
+
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="legal">
+      <p> Special thanks for visiting our wesite.<br>&copy; 2019 Something. All rights reserved </p>
+
+    </div>
+  </footer>
+
+  <style>
+   h5{
+    
+     padding: .3em;
+     line-height: 1.1em;
+     border-left: 5px solid dodgerblue;
+     background-color: #f7f7f7;
+    margin-bottom: 14px;
+    
+   }
+  </style>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
